@@ -4,3 +4,47 @@
 .bg-blue {
     background-color: #03a9f4;
 }
+
+
+
+
+/* hero section */
+
+.hero {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.hero .logo {
+    height: 30px;
+}
+
+.hero .title {
+    display: inline-block;
+    width: 100%;
+}
+
+.hero .subtitle {
+
+}
+
+.hero .clock {
+
+}
+
+.hero .form {
+
+}
+
+.hero .mouse {
+
+}
+
+
+
+/* main section */
+
+
+
+
+/* footer section */
