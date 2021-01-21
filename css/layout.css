@@ -20,6 +20,8 @@ margin: 0 calc(50% - 500px);
 /* responsive design */
 
 
+/* Responsive design */
+
 @media (max-width: 1100px) {
     .container > .row {
         width: 800px;
