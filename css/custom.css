@@ -1,8 +1,8 @@
 /* basic style */
 
 
-.bg-blue {
-    background-color: #03a9f4;
+.bg-main {
+    background-color: var(--main-color);
 }
 
 .mgb-3 {
