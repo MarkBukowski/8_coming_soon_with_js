@@ -4,6 +4,7 @@ import { progressBarData } from './data/progressBarData.js';
 
 import { socialsData } from './data/socialsData.js';
 import { renderSocials } from './components/renderSocials.js';
+import { Forms } from './components/forms/Forms.js';
 
 
 clock('.clock');
@@ -13,3 +14,7 @@ const progress = new ProgressBar('.left-column', progressBarData);
 
 progress.isValidSelector();
 progress.render();
+
+console.clear();
+
+new Forms();
