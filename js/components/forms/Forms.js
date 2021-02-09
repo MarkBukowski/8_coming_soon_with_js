@@ -1,3 +1,5 @@
+import { Validation } from './Validation.js';
+
 class Forms {
     constructor() {
         this.forms = [];
@@ -5,7 +7,7 @@ class Forms {
         this.init();
     }
 
-    init() {                       // put this one init inside constructor for more convenience
+    init() {     // put this one init inside constructor for more convenience
         this.findAllForms();
         this.addEvents();
     }
@@ -19,13 +21,29 @@ class Forms {
         for (const form of this.forms) {
             const allEntries = form.querySelectorAll('input, textarea');
 
-            const submit = form.querySelector('.btn');            // create button cariable
+            const submit = form.querySelector('.btn');          // create button variable
 
             submit.addEventListener('click', (event) => {          // create event for button
                 event.preventDefault();
 
                 for (const input of allEntries) {
-                    console.log(input.value);
+                    const rule = input.dataset.validationRule;
+                    const text = input.value;
+
+                    switch (rule) {
+                        case 'name':
+                            console.log(Validation.isValidName(text));
+                            break;
+                        case 'email':
+                            console.log(Validation.isValidEmail(text));
+                            break;
+                        case 'text':
+                            console.log(Validation.isValidText(text));
+                            break;
+
+                        default:
+                            break;
+                    }
                 }
             })
         }

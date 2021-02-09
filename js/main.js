@@ -1,6 +1,7 @@
 import { clock } from './components/clock.js';
 
 import { Forms } from './components/forms/Forms.js';
+import { Validation } from './components/forms/Validation.js';
 
 import { progressBarData } from './data/progressBarData.js';
 import { ProgressBar } from './components/ProgressBar.js';
