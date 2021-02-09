@@ -36,10 +36,11 @@
                 amet blanditiis id asperiores debitis distinctio!</p>
 
             <div class="clock mgb-3">
-                CLOCK
+                Clock
             </div>
-            <form class="form mgb-1" action="submit">
-                subform
+            <form class="form">
+                <input data-validation-rule="email" type="email" placeholder="Type your email" required>
+                <button class="btn" type="submit">Subscribe now</button>
             </form>
             <div class="mouse">
                 <div class="wheel">
@@ -67,7 +68,12 @@
                 <p class="block-description mgb-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe
                     mollitia sapiente <a href="mailto:bitburger@matrox.com">bitburger@matrox.com</a> perferendis quasi
                     impedit aliquam!</p>
-                <form class="form" action="submit"></form>
+                <form class="form">
+                    <input data-validation-rule="name" type="text" placeholder="Name" required>
+                    <input data-validation-rule="email" type="email" placeholder="Email" required>
+                    <textarea data-validation-rule="text" placeholder="Message" required></textarea>
+                    <button class="btn" type="submit">Send message</button>
+                </form>
             </div>
         </div>
     </main>

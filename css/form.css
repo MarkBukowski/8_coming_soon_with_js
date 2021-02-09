@@ -1,0 +1,38 @@
+.form {
+    display: inline-block;
+    width: 100%;
+}
+
+.form > input,
+.form > textarea {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 2px;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: transparent;
+    resize: vertical;
+    outline: none;
+}
+
+.form > input:active,
+.form > textarea:active {
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.form > textarea {
+    min-height: 94px;
+    max-height: 262px;
+}
+
+.form > button {
+    margin-top: 20px;
+}
+
+.right-column > .form button {
+    float: right;
+}
