@@ -20,8 +20,13 @@
 /* hero section */
 
 .hero {
+    min-height: 100vh;
     text-align: center;
     padding-bottom: 30px;
+    background-image: url(../imgs/top-background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    vertical-align: center;
 }
 
 .hero .logo {
@@ -41,7 +46,7 @@
     display: inline-block;
     width: 100%;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 28px;
     color: #555;
 }
 
@@ -66,6 +71,17 @@
     display: inline-block;
     float: right;
     width: 40%;
+}
+
+.left-column p,
+.right-column p {
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.left-column h2,
+.right-column h2 {
+    text-transform: uppercase;
 }
 
 main .block-description > a {
@@ -108,8 +124,12 @@ footer.container {
 }
 
 .container .socials {
-border-bottom: 2px solid #fff;
-padding: 20px 0;
+    border-bottom: 2px solid #fff;
+    padding: 20px 0;
+}
+
+.socials > a {
+    margin: 0 10px;
 }
 
 .socials > .fa {
@@ -129,6 +149,10 @@ padding: 20px 0;
 footer a {
     color: #fff;
     text-decoration: none;
+}
+
+footer p {
+    font-size: 14px;
 }
 
 .footer-logo {

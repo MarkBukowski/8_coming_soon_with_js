@@ -36,3 +36,8 @@
 .right-column > .form button {
     float: right;
 }
+
+.right-column input::placeholder,
+.right-column textarea::placeholder {
+    font-size: 16px;
+}

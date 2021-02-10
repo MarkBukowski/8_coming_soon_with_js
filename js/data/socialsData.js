@@ -16,11 +16,11 @@ const socialsData = [
         href: '#',
     },
     {
-        icon: 'instagram',
+        icon: 'linkedin',
         href: '#',
     },
     {
-        icon: 'linkedin',
+        icon: 'instagram',
         href: '#',
     },
     {
