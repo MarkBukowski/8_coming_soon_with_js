@@ -26,7 +26,6 @@
     background-image: url(../imgs/top-background.jpg);
     background-size: cover;
     background-attachment: fixed;
-    vertical-align: center;
 }
 
 .hero .logo {
@@ -128,17 +127,32 @@ footer.container {
     padding: 20px 0;
 }
 
+.container > .back-to-top {
+    position: relative;
+}
+
+.container > .back-to-top > .btn {
+    position: absolute;
+    top: -25px;
+    right: -10px;
+}
+
 .socials > a {
     margin: 0 10px;
 }
 
 .socials > .fa {
     width: 40px;
-    font-size: 20px;
-    line-height: 40px;
+    height: 40px;
+    font-size: 0;
     color: #fff;
     border-radius: 50%;
     transition: all 0.4s;
+}
+
+.fa::before {
+    font-size: 20px;
+    line-height: 40px;
 }
 
 .socials > .fa:hover {
@@ -193,11 +207,14 @@ footer p {
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 680px) {
     .bottom-texts {
         flex-direction: column;
     }
     .bottom-texts > p::before {
+        display: none;
+    }
+    .container > .back-to-top {
         display: none;
     }
 }

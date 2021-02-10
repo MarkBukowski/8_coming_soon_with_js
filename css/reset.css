@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body,
 body * {
     margin: 0;
@@ -5,4 +9,5 @@ body * {
     vertical-align: top;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
+    font-display: swap;
 }
